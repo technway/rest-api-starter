@@ -1,0 +1,19 @@
+/*!
+Theme Name: TNW REST Starter
+Theme URI: https://technway.com/
+Author: Technway
+Author URI: https://technway.com/
+Description: TNW REST Starter is a specialized WordPress theme designed to function purely as a headless REST API endpoint. It strips away all frontend rendering and traditional WordPress theme features, focusing solely on providing a clean, efficient REST API interface.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: rest-api-starter
+Tags: headless, rest-api, backend-only, lightweight
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+rest-api-starter is based on `REST API Starter` `https://github.com/technway/rest-api-starter`, (C) 2025 Technway.
+*/

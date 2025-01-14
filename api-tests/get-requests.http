@@ -1,0 +1,7 @@
+@baseURL = {{$dotenv BASE_URL}}
+
+### Retrieve all posts
+GET {{baseURL}}/wp/v2/posts
+
+### Search posts by keyword
+GET {{baseURL}}/wp/v2/posts?search=hello

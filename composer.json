@@ -1,0 +1,17 @@
+{
+    "name": "technway/rest-api-starter",
+    "type": "wordpress-theme",
+    "description": "A headless WordPress starter theme optimized for REST API use",
+    "keywords": [
+        "WordPress",
+        "Themes",
+        "Headless",
+        "REST API",
+        "Starter"
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

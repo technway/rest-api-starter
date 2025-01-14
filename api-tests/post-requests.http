@@ -1,0 +1,13 @@
+@baseURL = {{$dotenv BASE_URL}}
+@jwtToken = {{$dotenv JWT_TOKEN}}
+
+### Create a new post
+POST {{baseURL}}/wp/v2/posts
+Authorization: Bearer {{jwtToken}}
+Content-Type: application/json
+
+{
+  "title": "My 2nd post",
+  "content": "some content",
+  "status": "publish"
+}
