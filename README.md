@@ -1,24 +1,28 @@
-<h1>REST API Starter</h1>
+![rest-api-starter-logo](https://i.ibb.co/JyR1zGF/rest-api-starter-logo.png)
+
+# REST API Starter
 
 A headless WordPress starter theme optimized for REST API functionality only.
 
 ---
 
-- [Description](#description)
-  - [Key Features:](#key-features)
-- [Get Started](#get-started)
-  - [Installation](#installation)
-  - [Required Plugins](#required-plugins)
-  - [Environment Setup](#environment-setup)
-    - [Step 1: Install Dependencies](#step-1-install-dependencies)
-    - [Step 2: Create the `.env` File](#step-2-create-the-env-file)
-    - [Step 3: Configure `wp-config.php`](#step-3-configure-wp-configphp)
-- [Usage](#usage)
-  - [Example API Endpoints:](#example-api-endpoints)
-  - [Authentication Example (Using JWT):](#authentication-example-using-jwt)
-- [Features](#features)
-- [Documentation](#documentation)
-- [License](#license)
+- [REST API Starter](#rest-api-starter)
+  - [Description](#description)
+    - [Key Features:](#key-features)
+  - [Get Started](#get-started)
+    - [Installation](#installation)
+    - [Required Plugins](#required-plugins)
+    - [Environment Setup](#environment-setup)
+      - [Step 1: Install Dependencies](#step-1-install-dependencies)
+      - [Step 2: Create the `.env` File](#step-2-create-the-env-file)
+      - [Step 3: Configure `wp-config.php`](#step-3-configure-wp-configphp)
+  - [Usage](#usage)
+    - [Example API Endpoints:](#example-api-endpoints)
+    - [Authentication Example (Using JWT):](#authentication-example-using-jwt)
+    - [API Testing](#api-testing)
+  - [Features](#features)
+  - [Documentation](#documentation)
+  - [License](#license)
 
 ---
 
@@ -150,6 +154,13 @@ This theme is designed to be used purely as a backend API. Once installed:
    GET /wp-json/wp/v2/posts
    Authorization: Bearer <your-token>
    ```
+
+---
+
+### API Testing
+The `api-tests` directory contains ready-to-use HTTP request files for testing the API endpoints. These tests are designed to work with VS Code's REST Client extension.
+
+For detailed information about the API tests, see [api-tests.md](api-tests/api-tests.md).
 
 ---
 
