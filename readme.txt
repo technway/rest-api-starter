@@ -29,4 +29,5 @@ REST API Starter is a specialized WordPress theme designed to function purely as
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* REST API Starter - https://github.com/technway/rest-api-starter - (C) 2025 Technway
+* Underscores - https://underscores.me/ - (C) 2012-2020 Automattic, Inc.

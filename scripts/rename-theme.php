@@ -1,4 +1,23 @@
 <?php
+/**
+ * "Rename Theme" Script
+ * 
+ * This script helps you rename the REST API Starter theme to your custom theme name.
+ * It automatically updates all theme references across multiple files while preserving
+ * code blocks and formatting.
+ * 
+ * - Updates theme name in all relevant files (functions.php, style.css, README.md, etc.)
+ * - Handles multiple name formats (regular, uppercase, lowercase, kebab-case)
+ * - Preserves code blocks and formatting during replacement
+ * - Provides feedback on processed files
+ * 
+ * Usage:
+ *   Run the script from the root of the theme directory:
+ *   php ./scripts/rename-theme.php "Your New Theme Name"
+ * 
+ * Example:
+ *   php ./scripts/rename-theme.php "My Custom API"
+ */
 
 if ($argc < 2) {
     echo "Usage: php rename-theme.php '<New Theme Name>'\n";
