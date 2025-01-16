@@ -31,13 +31,6 @@ add_action('after_setup_theme', function () {
     show_admin_bar(false);
 });
 
-// Enable CORS
-add_action('init', function() {
-    header("Access-Control-Allow-Origin: *");
-    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-    header("Access-Control-Allow-Headers: Content-Type, Authorization");
-});
-
 // Handle preflight requests
 add_action('rest_api_init', function() {
     remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');

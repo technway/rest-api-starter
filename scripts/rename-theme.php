@@ -24,17 +24,24 @@ if ($argc < 2) {
     exit(1);
 }
 
+if ($argc < 2) {
+    echo "Usage: php rename-theme.php '<New Theme Name>'\n";
+    exit(1);
+}
+
 $newThemeName = trim($argv[1]);
 
 // Generate name variations
 $newThemeNameTrimmed = preg_replace('/\s+/', '_', $newThemeName);
 $newThemeNameLower = strtolower($newThemeNameTrimmed);
 $newThemeNameKebab = strtolower(str_replace('_', '-', $newThemeNameTrimmed));
+$newThemeNameUnderscored = str_replace(' ', '_', $newThemeName);
 
 $starterThemeName = "REST API Starter";
 $starterThemeNameUpper = "_REST_API_STARTER_";
 $starterThemeNameLower = "rest_api_starter";
 $starterThemeNameKebab = "rest-api-starter";
+$starterThemeNameUnderscored = "REST_API_Starter";
 
 // Define files to update
 $filesToUpdate = [
@@ -42,7 +49,7 @@ $filesToUpdate = [
     'readme.txt',
     'style.css',
     'README.md',
-    'api-tests/api-tests.md',
+    'testing-api/testing-api.md',
 ];
 
 foreach ($filesToUpdate as $file) {
@@ -66,6 +73,7 @@ foreach ($filesToUpdate as $file) {
     $content = str_replace($starterThemeNameUpper, '_' . strtoupper($newThemeNameTrimmed) . '_', $content);
     $content = str_replace($starterThemeNameLower, $newThemeNameLower, $content);
     $content = str_replace($starterThemeNameKebab, $newThemeNameKebab, $content);
+    $content = str_replace($starterThemeNameUnderscored, $newThemeNameUnderscored, $content);
 
     // Restore backtick blocks
     foreach ($backtickBlocks as $index => $block) {

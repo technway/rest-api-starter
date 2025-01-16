@@ -1,12 +1,10 @@
 === REST API Starter ===
-
 Contributors: technway
 Tags: headless, rest-api, api-first, starter-theme
-
-Requires at least: 5.0
-Tested up to: 6.4
-Requires PHP: 7.4
-Stable tag: 1.0.0
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 7.2
+Stable tag: 1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -29,5 +27,4 @@ REST API Starter is a specialized WordPress theme designed to function purely as
 
 == Credits ==
 
-* REST API Starter - https://github.com/technway/rest-api-starter - (C) 2025 Technway
-* Underscores - https://underscores.me/ - (C) 2012-2020 Automattic, Inc.
+* 'REST API Starter - https://github.com/technway/rest-api-starter - (C) 2025 Technway'
